@@ -4,10 +4,62 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/000cc735d9.js" crossorigin="anonymous"></script>
     <title>Cálculo IMC</title>
 </head>
 <body>
+
+    <section class="conteiner">
+
+        
+            <section class="conteiner__infos">
+                <h1>Calculadora IMC</h1>
+                 <form>
+                    <i class="fa-solid fa-person"></i><input type="text" name="nalt" id="ialt" placeholder="Altura" >
+                    <i class="fa-solid fa-weight-hanging"></i><input type="text" name="npeso" id="ipeso" placeholder="Peso">
+                </form>
+                    <button id="btCalimc" type="submit">Calcular IMC</button>
+            </section>
     
+
+             <section class="conteiner__resul">
+                 
+                    <div class="conteinerResulIMC">
+                        <p> IMC
+                           </p>
+                           <p id="Imc">25.4</p>
+
+                    </div>
+
+                    <div class="conteinerclassif">
+                        <p>Classificação
+                        </p>
+                        <p id="Classif">Obesidade Grau III</p>
+                    </div>
+                 
+             </section>
+
+            
+    </section>    
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
 
     <script src="script.js"></script>
 </body>
