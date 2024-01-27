@@ -33,7 +33,7 @@ btnLimpar.addEventListener("click", function(event){
             peso.value = "";
             altura.value = "";
             
-
+            aparecerResult.classList.add("escondido");
         };
 
         bblur.classList.remove("blur");
