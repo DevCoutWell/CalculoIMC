@@ -26,8 +26,7 @@ btnLimpar.addEventListener("click", function(event){
 
       setTimeout(() => {
 
-        
-
+       
         if(confirm("Deseja mesmo limpar os campos?")){
 
             peso.value = "";
