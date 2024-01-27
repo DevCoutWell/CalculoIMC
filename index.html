@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,60 +8,77 @@
     <script src="https://kit.fontawesome.com/000cc735d9.js" crossorigin="anonymous"></script>
     <title>Cálculo IMC</title>
 </head>
+
 <body>
+        <h1>Calculadora IMC</h1>
 
-    <section class="conteiner">
-
-        
-            <section class="conteiner__infos">
-                <h1>Calculadora IMC</h1>
-                 <form>
-                    <i class="fa-solid fa-person"></i><input type="text" name="nalt" id="ialt" placeholder="Altura" >
-                    <i class="fa-solid fa-weight-hanging"></i><input type="text" name="npeso" id="ipeso" placeholder="Peso">
-                </form>
-                    <button id="btCalimc" type="submit">Calcular IMC</button>
-            </section>
-    
-
-             <section class="conteiner__resul">
-                 
-                    <div class="conteinerResulIMC">
-                        <p> IMC
-                           </p>
-                           <p id="Imc">25.4</p>
-
-                    </div>
-
-                    <div class="conteinerclassif">
-                        <p>Classificação
-                        </p>
-                        <p id="Classif">Obesidade Grau III</p>
-                    </div>
-                 
-             </section>
-
+        <section class="conteiner">
             
-    </section>    
+
+            <section class="infos">
+
+                <form id="form">
+
+                    <i class="fa-solid fa-person"></i>
+
+                    <input type="text" name="nalt" id="ialtu" placeholder="Altura" autocomplete="off">
+
+
+                    
+                    <i class="fa-solid fa-weight-hanging"></i>
+                    
+                    <input type="text" name="npeso" id="ipeso" placeholder="Peso" autocomplete="off">
+                
+                </form>
+
+                <div class="butons">
+
+
+                    <button id="btCalimc" type="submit">Calcular IMC</button>
+
+                    <button id="btLimpar" type="submit">Limpar Campos</button>
+
+                </div>
+            
+        </section>
+
+
+        <section class="conteiner__resul escondido" id="sectionresult">
+
+
+            <h2>Resultado</h2>
+
+            <div class="resultados" >
+                <div id="ResulIMC">
+                    <i class="fa-solid fa-scale-balanced"></i>
+                    <div>
+                        IMC
+                         <br>
+                         <span id="vImc">25.4</span>
+                    </div>
 
 
 
+                </div>
+                <div id="classif">
+
+                    <i class="fa-sharp fa-solid fa-list-check"></i>
+                    <div>Classificação<br> <span id="vclassif">Obesidade Grau III</span></div> 
+                </div>
+            </div>
 
 
+             <img src="assets/images/undraw_personal_training_0dqn (2).svg" alt="Imagens de mulheres trenando"> 
+
+        </section>
+
+    </section>
 
 
-
-
-    
-
-
-
-
-
-
-
-
+    <div  id="desfocar"></div>
 
 
     <script src="script.js"></script>
 </body>
+
 </html>
