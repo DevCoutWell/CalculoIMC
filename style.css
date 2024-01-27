@@ -239,6 +239,12 @@ img{
 
 @media (max-width: 400px){
 
+    body{
+        display: flex;
+        justify-content: flex-start;
+       padding-top: 30px;
+    }
+
     body h1{
         font-size: 25px;
     }
